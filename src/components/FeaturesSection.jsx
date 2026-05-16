@@ -123,15 +123,15 @@ function PhoneFrame({ src, alt, size = 'normal', onClick, showHint = false }) {
         </div>
       </div>
 
-      {/* "Ver más" hint overlay */}
+      {/* "Ver Preview" badge BELOW the phone */}
       {showHint && (
         <motion.div
-          className="absolute inset-0 rounded-[2rem] sm:rounded-[2.5rem] flex items-end justify-center pb-8 z-30 pointer-events-none"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          className="flex justify-center mt-4 pointer-events-none"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
-          <div className="bg-jacek-red/90 backdrop-blur-sm px-4 py-1.5 rounded-full flex items-center gap-1.5">
+          <div className="bg-jacek-red/90 backdrop-blur-sm px-5 py-2 rounded-full flex items-center gap-2 shadow-[0_4px_20px_rgba(186,21,5,0.3)]">
             <Eye className="w-3.5 h-3.5 text-white" />
             <span className="text-[10px] sm:text-xs text-white font-semibold uppercase tracking-wider">Ver Preview</span>
           </div>

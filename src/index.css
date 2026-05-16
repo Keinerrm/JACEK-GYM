@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-jacek-red: #BA1505;
+  --color-jacek-red-hover: #D41806;
+  --color-jacek-red-dark: #8A1004;
+  --color-jacek-bg: #111111;
+  --color-jacek-bg-light: #1A1A1A;
+  --color-jacek-black: #000000;
+  --color-jacek-white: #FFFFFF;
+  --color-jacek-gray: #888888;
+  --color-jacek-gray-dark: #333333;
+  --font-manrope: "Manrope", sans-serif;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-jacek-black);
+    color: var(--color-jacek-white);
+    font-family: var(--font-manrope);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: var(--color-jacek-red);
+    color: var(--color-jacek-white);
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-jacek-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-jacek-gray-dark);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-jacek-red);
+}

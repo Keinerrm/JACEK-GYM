@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Apple, Smartphone } from 'lucide-react'
+import { Download } from 'lucide-react'
 
 export default function CTASection() {
   return (
@@ -67,8 +67,7 @@ export default function CTASection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Descarga JACEK GYM y lleva tu entrenamiento al siguiente nivel.
-          Disponible para iOS y Android.
+          Descarga la APK de JACEK GYM y lleva tu entrenamiento al siguiente nivel en tu dispositivo Android.
         </motion.p>
 
         {/* ── Store buttons ── */}
@@ -80,7 +79,8 @@ export default function CTASection() {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <a
-            href="#"
+            href="/JacekGym.apk"
+            download="JacekGym.apk"
             className="group w-full sm:w-auto flex items-center justify-center gap-3
                        bg-jacek-red text-white
                        px-6 sm:px-8 py-3.5 sm:py-4 cursor-pointer
@@ -90,23 +90,8 @@ export default function CTASection() {
                        active:scale-95
                        focus:outline-2 focus:outline-offset-2 focus:outline-jacek-red"
           >
-            <Apple className="w-5 h-5" />
-            <span>App Store</span>
-          </a>
-
-          <a
-            href="#"
-            className="group w-full sm:w-auto flex items-center justify-center gap-3
-                       bg-transparent text-white
-                       border-2 border-jacek-gray-dark px-6 sm:px-8 py-3.5 sm:py-4 cursor-pointer
-                       font-semibold text-sm sm:text-base uppercase tracking-widest
-                       transition-all duration-300
-                       hover:border-jacek-red hover:bg-jacek-red/10 hover:shadow-[0_0_40px_rgba(186,21,5,0.2)]
-                       active:scale-95
-                       focus:outline-2 focus:outline-offset-2 focus:outline-jacek-red"
-          >
-            <Smartphone className="w-5 h-5" />
-            <span>Google Play</span>
+            <Download className="w-5 h-5" />
+            <span>Descargar APK</span>
           </a>
         </motion.div>
       </div>

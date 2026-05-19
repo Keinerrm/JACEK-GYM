@@ -147,7 +147,8 @@ export default function HeroSection() {
 
         {/* CTA Button */}
         <motion.a
-          href="#descargar"
+          href="/JacekGym.apk"
+          download="JacekGym.apk"
           className="group relative inline-flex items-center gap-3 cursor-pointer
                      bg-jacek-red text-white font-semibold
                      text-sm sm:text-base md:text-lg
@@ -161,7 +162,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 1.4, ease: 'easeOut' }}
         >
           <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover:translate-x-full transition-transform duration-700" />
-          <span className="relative z-10">Descargar App</span>
+          <span className="relative z-10">Descargar APK</span>
         </motion.a>
       </motion.div>
 
@@ -175,9 +176,7 @@ export default function HeroSection() {
           document.getElementById('funciones')?.scrollIntoView({ behavior: 'smooth' })
         }
       >
-        <span className="text-[10px] sm:text-xs tracking-[0.3em] uppercase text-jacek-gray font-medium">
-          Scroll
-        </span>
+
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}

@@ -79,8 +79,7 @@ export default function CTASection() {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <a
-            href="/JacekGym.apk"
-            download="JacekGym.apk"
+            href="https://github.com/Keinerrm/JACEK-GYM/releases/download/App_Jacek_Gym_v_1.0/JacekGym.apk"
             className="group w-full sm:w-auto flex items-center justify-center gap-3
                        bg-jacek-red text-white
                        px-6 sm:px-8 py-3.5 sm:py-4 cursor-pointer

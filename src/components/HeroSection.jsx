@@ -147,8 +147,7 @@ export default function HeroSection() {
 
         {/* CTA Button */}
         <motion.a
-          href="/JacekGym.apk"
-          download="JacekGym.apk"
+          href="https://github.com/Keinerrm/JACEK-GYM/releases/download/App_Jacek_Gym_v_1.0/JacekGym.apk"
           className="group relative inline-flex items-center gap-3 cursor-pointer
                      bg-jacek-red text-white font-semibold
                      text-sm sm:text-base md:text-lg
